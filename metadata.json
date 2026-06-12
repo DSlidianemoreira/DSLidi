@@ -1,0 +1,6 @@
+{
+  "name": "DS Lidi - Marketing Digital",
+  "description": "Consultoria de Marketing Digital em Artur Nogueira e Região",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
