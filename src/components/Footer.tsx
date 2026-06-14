@@ -68,12 +68,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+        <div className="pt-8 border-t border-white/10 flex flex-col items-center gap-4 text-xs text-gray-500 text-center">
           <p>© {new Date().getFullYear()} DS Lidi. Todos os direitos reservados.</p>
-          <div className="flex gap-1 items-center">
-            <span>Desenvolvido por</span>
-            <span className="font-bold text-brand-gold ml-1">OFS Digital</span>
-          </div>
         </div>
       </div>
     </footer>
