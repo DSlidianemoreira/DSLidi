@@ -5,17 +5,17 @@ export default function About() {
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2 relative">
             <div className="absolute inset-0 bg-brand-navy rounded-2xl transform translate-x-4 translate-y-4"></div>
-            <div className="relative rounded-2xl w-full h-64 md:h-96 shadow-2xl border-4 border-white overflow-hidden bg-brand-navy flex items-center justify-center text-center p-6 text-white font-medium z-10">
+            <div className="relative rounded-2xl w-full min-h-[16rem] md:min-h-[24rem] shadow-2xl border-4 border-white overflow-hidden bg-brand-navy flex flex-col items-center justify-center text-center p-8 z-10">
+              <span className="relative z-30 text-brand-gold font-medium mb-6">Equipe da DS Lidi trabalhando em soluções e estratégias de marketing digital em Artur Nogueira</span>
               <img 
                 src="/avatar1.png" 
                 alt="Equipe da DS Lidi trabalhando em soluções e estratégias de marketing digital em Artur Nogueira" 
-                className="absolute inset-0 w-full h-full object-cover z-20"
+                className="relative z-20 w-48 md:w-64 h-auto object-contain mx-auto"
                 loading="lazy"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                 }}
               />
-              <span className="relative z-0">Equipe da DS Lidi trabalhando em soluções e estratégias de marketing digital em Artur Nogueira</span>
             </div>
             {/* Decal */}
             <div className="absolute -bottom-6 -left-6 bg-brand-gold text-brand-navy p-6 rounded-lg shadow-xl hidden md:block z-30">

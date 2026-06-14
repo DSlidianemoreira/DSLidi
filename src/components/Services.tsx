@@ -52,7 +52,7 @@ export default function Services() {
                   <img 
                     src={service.image} 
                     alt={"Representação visual do serviço de " + service.title} 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
