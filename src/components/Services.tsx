@@ -7,28 +7,28 @@ export default function Services() {
       description: 'Desenvolvemos sites elegantes, rápidos e totalmente otimizados para converter visitantes em clientes. A vitrine digital que sua marca merece.',
       slug: 'web-design',
       icon: Monitor,
-      image: '/assets/img/servico-webdesign.webp'
+      image: '/WebDesign.png'
     },
     {
       title: 'SEO',
       description: 'Seja encontrado por quem realmente busca seus serviços. Colocamos sua empresa no topo das buscas orgânicas.',
       slug: 'seo',
       icon: Search,
-      image: '/assets/img/servico-seo.webp'
+      image: '/SEO.png'
     },
     {
       title: 'Google Meu Negócio',
       description: 'Domine o mapa da sua região. Facilitamos o contato direto dos seus clientes com sua empresa através de um perfil otimizado e profissional.',
       slug: 'gmn',
       icon: Map,
-      image: '/assets/img/servico-gmn.webp'
+      image: '/GMNLIdi.png'
     },
     {
       title: 'Estratégias de Marketing',
       description: 'Planejamento integrado de canais e conteúdo para garantir que sua marca mantenha uma presença ativa e relevante no mercado.',
       slug: 'estrategias',
       icon: BarChart,
-      image: '/assets/img/servico-estrategias.webp'
+      image: '/Marketing.png'
     }
   ];
 
@@ -62,13 +62,13 @@ export default function Services() {
                 </div>
               </div>
               
-              <div className="p-8 flex flex-col flex-grow relative">
+              <div className="p-8 pt-10 flex flex-col flex-grow relative text-center items-center">
                 {/* Floating Icon */}
-                <div className="absolute -top-8 right-6 w-14 h-14 bg-brand-gold rounded-full flex items-center justify-center text-brand-navy shadow-lg border-4 border-white group-hover:bg-brand-navy group-hover:text-brand-gold transition-colors duration-300">
+                <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 bg-brand-gold rounded-full flex items-center justify-center text-brand-navy shadow-lg border-4 border-white group-hover:bg-brand-navy group-hover:text-brand-gold transition-colors duration-300">
                   <service.icon className="w-6 h-6" />
                 </div>
 
-                <h3 className="font-heading font-bold text-xl text-brand-navy mb-4 pr-10">
+                <h3 className="font-heading font-bold text-xl text-brand-navy mb-4">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-8 flex-grow">

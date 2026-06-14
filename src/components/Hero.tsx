@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0 bg-brand-navy">
         <img
-          src="/assets/img/hero-bg.webp"
+          src="/WebDesign2.png"
           alt="Foto de fundo representando estratégias de marketing digital para negócios em Artur Nogueira"
           className="w-full h-full object-cover opacity-30 mix-blend-overlay"
           loading="lazy"
