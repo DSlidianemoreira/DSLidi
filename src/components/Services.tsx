@@ -45,21 +45,17 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div key={index} className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full">
-              <div className="relative h-48 overflow-hidden bg-brand-navy/5">
-                <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-transparent transition-colors z-10"></div>
-                {/* Fallback image style handles missing images nicely */}
-                <div className="w-full h-full flex items-center justify-center text-gray-300 bg-gray-100">
-                  <img 
-                    src={service.image} 
-                    alt={"Representação visual do serviço de " + service.title} 
-                    className="w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                    }}
-                  />
-                  <service.icon className="absolute w-12 h-12 opacity-20" />
-                </div>
+              <div className="w-full overflow-hidden relative bg-gray-50 flex items-center justify-center border-b border-gray-100">
+                <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
+                <img 
+                  src={service.image} 
+                  alt={"Representação visual do serviço de " + service.title} 
+                  className="w-full h-auto block transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                  }}
+                />
               </div>
               
               <div className="p-8 pt-10 flex flex-col flex-grow relative text-center items-center">
